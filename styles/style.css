@@ -11,11 +11,13 @@
   background-attachment: fixed;
   padding-inline: 20px;
 }
-
+p {
+  color: var(--paragraph-color);
+}
 button {
   background-color: transparent;
   border: 0;
-  color: var(--accent-color);
+  color: var(--text-color);
   text-transform: lowercase;
 }
 
@@ -52,16 +54,19 @@ a:focus {
 .title {
   color: var(--title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--text-color);
   line-height: 82.5%;
 }
 .pseudo-element-rec {
   display: flex;
   white-space: nowrap;
-  color: var(--accent-color);
+  color: var(--text-color);
   position: absolute;
   right: 9px;
   top: 21px;
+}
+.pseudo-element-rec::before {
+  content: 'REC';
 }
 .pseudo-element-rec::after {
   content: '';
@@ -70,8 +75,8 @@ a:focus {
   border-radius: 50%;
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--text-color);
+  box-shadow: 0 0 4px 2px var(--text-color);
   margin-inline-start: 10px;
 }
 
@@ -91,7 +96,7 @@ a:focus {
 }
 
 .title-decor {
-  background-color: var(--accent-color);
+  background-color: var(--text-color);
   color: var(--bg-color);
 }
 
@@ -101,8 +106,8 @@ a:focus {
   block-size: 25px;
   inline-size: 25px;
   background-color: transparent;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--text-color);
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -114,8 +119,8 @@ a:focus {
   block-size: 25px;
   inline-size: 25px;
   background-color: transparent;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
   position: absolute;
   top: 20px;
   right: 0;
@@ -134,7 +139,7 @@ a:focus {
 }
 
 .section__title-main {
-  color: var(--accent-color);
+  color: var(--text-color);
   line-height: 130%;
 }
 
@@ -147,7 +152,7 @@ a:focus {
 }
 
 .content__link {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-color);
 }
 
 .content-block-main__text {
@@ -214,7 +219,7 @@ a:focus {
   padding-block: 20px;
 }
 .footer__title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-color);
 }
 .footer {
   position: relative;
@@ -225,7 +230,7 @@ a:focus {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid currentColor;
 }
 
 @media (max-width: 768px) {
@@ -302,23 +307,6 @@ a:focus {
     grid-column: auto;
   }
 
-  /*.header__theme-menu {*/
-  /*  justify-self: end;*/
-  /*  align-self: center;*/
-  /*}*/
-  /*.header__theme-menu-list {*/
-  /*  flex-direction: column;*/
-  /*}*/
-  /*.content-block-main {*/
-  /*  padding-inline-start: 7px;*/
-  /*}*/
-  /*.section-attention-reduction {*/
-  /*  display: flex;*/
-  /*  flex-direction: column;*/
-  /*}*/
-  /*.attention-reduction-block {*/
-  /*  max-inline-size: calc((100% - 40px) / 3);*/
-  /*}*/
   .content-section {
     display: flex;
     flex-direction: column;
