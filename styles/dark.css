@@ -5,33 +5,43 @@
   --title-color: #db00ff;
   --main-font: 'IBM Plex mono';
   background-image: url('/images/cover-image-dark.png');
-}
-.page.theme_dark p {
-  color: var(--paragraph-color);
-}
-.page.theme_dark .content__link {
-  text-shadow: 2px 2px 0 var(--text-color);
-}
-.page.theme_dark .title-decor {
-  color: var(--bg-color);
-  background-color: var(--text-color);
-}
-.page.theme_dark .title {
-  text-shadow: 4px 4px 0 var(--text-color);
-}
-.page.theme_dark button {
-  color: inherit;
-}
-.page.theme_dark .section__title-main {
-  color: var(--bg-color);
-}
 
-.page.theme_dark .decorated-zone::before,
-.page.theme_dark .decorated-zone::after {
-  border-color: var(--text-color);
-}
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
 
-.page.theme_dark .pseudo-element-rec::before,
-.page.theme_dark .pseudo-element-rec::after {
-  display: initial;
+  .content-block-main__text {
+    color: var(--paragraph-color);
+  }
+
+  .content__link {
+    text-shadow: 2px 2px 0 var(--text-color);
+  }
+
+  .title-decor {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+  }
+
+  .title {
+    text-shadow: 4px 4px 0 var(--text-color);
+  }
+
+  .header__theme-menu-button {
+    color: inherit;
+  }
+
+  .section__title-main {
+    color: var(--bg-color);
+  }
+
+  .decorated-zone::before,
+  .decorated-zone::after {
+    border-color: var(--text-color);
+  }
+
+  .pseudo-element-rec::before,
+  .pseudo-element-rec::after {
+    display: initial;
+  }
 }
