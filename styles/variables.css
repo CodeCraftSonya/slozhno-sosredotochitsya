@@ -7,5 +7,6 @@
   --text-color: #ff0070;
   --paragraph-color: #f1b2ce;
   --title-color: #db00ff;
+  --hover-border-color: rgba(255, 0, 112, 0.4);
   --main-font: 'IBM Plex mono';
 }
