@@ -3,10 +3,15 @@
   и их переопределение под различные устройства
 */
 .page {
-  --bg-color: #000028;
-  --text-color: #ff0070;
-  --paragraph-color: #f1b2ce;
-  --title-color: #db00ff;
-  --hover-border-color: rgba(255, 0, 112, 0.4);
   --main-font: 'IBM Plex mono';
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --heading-color: #000028;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --heading-background-color: #ff0070;
+  --accent-color: #ff0070;
+  --hover-border-color: rgba(255, 0, 112, 0.4);
+  --pseudo-element-color: #ff0070;
+  --section-title-color: #ff0070;
 }
