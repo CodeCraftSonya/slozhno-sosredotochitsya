@@ -1,1 +1,1 @@
-git@github.com:SonyaProjects/slozhno-sosredotochitsya.git
+https://github.com/CodeCraftSonya/slozhno-sosredotochitsya.git
